@@ -1,9 +1,12 @@
 require 'watir-webdriver'
 
+browser = Watir::Browser.new :firefox
+
 Before do
-  @browser = Watir::Browser.new :firefox
+  @browser = browser
 end
 
-After do
-  @browser.close
+
+at_exit do
+  browser.close
 end

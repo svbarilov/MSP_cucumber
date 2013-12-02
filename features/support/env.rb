@@ -5,6 +5,7 @@ require 'page-object'
 require 'require_all'
 require 'fig_newton'
 require 'data_magic'
+require 'watir-webdriver'
 
 require_all 'lib'
 
@@ -16,4 +17,9 @@ PageObject::PageFactory.routes = {
                  [ShoppingCartPage, :proceed_to_checkout],
                  [CheckoutPage, :checkout]]
 }
+
+
+
+
+
 
